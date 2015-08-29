@@ -54,4 +54,5 @@ def icu(word, word_eol, userdata):
 
 hexchat.hook_command("ICU", icu, contexts, help=__module_help_message__)
 hexchat.hook_print("Channel Message", on_message, contexts)
+hexchat.hook_print("Channel Msg Hilight", on_message, contexts)
 hexchat.hook_print("Your Message", on_message, contexts)
